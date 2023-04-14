@@ -1,4 +1,4 @@
-# GHUsers 💻🌎
+# [GHUsers](https://gh-users.vercel.app/) 💻🌎
 
 <p>Projeto front-end desenvolvido em React, que consume a API do GITHUB. A aplicação permite que você encontre qualquer usuário da plataforma, e traz algumas informações sobre o perfil.</p>
 
