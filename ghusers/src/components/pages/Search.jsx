@@ -32,8 +32,8 @@ function Search() {
             <label htmlFor="username">Who are you looking for today?</label>
 
             <div className='inp-btn'>
-                <input type="text" id='username' placeholder='digite seu nome' />
-                <button id='btn-get' onClick={fetchData}>Search user</button>
+                <input type="text" id='username' placeholder='add the username' />
+                <button id='btn-get' onClick={fetchData}>Search</button>
             </div>
 
             <div id='hide-div'>
