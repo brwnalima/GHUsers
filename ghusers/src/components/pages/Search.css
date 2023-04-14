@@ -43,6 +43,7 @@ input {
     border-radius: 2px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.141);
 }
 
 button {
@@ -53,6 +54,7 @@ button {
     border: 1px solid #171515;
     background-color: #fff;
     color: #171515;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.059);
 }
 
 button:hover {

@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react'
 import axios from 'axios'
 import Card from '../card/Card';
 import "./Search.css"
+import { Fade } from "react-awesome-reveal";
 
 function Search() {
     const [data, setData] = useState(null);
@@ -27,32 +28,37 @@ function Search() {
 
     return (
         <div className='search'>
-            <img id='logo' src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+
+            <img id='logo' src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
             <h1>GHUSERS</h1>
             <label htmlFor="username">Who are you looking for today?</label>
 
-            <div className='inp-btn'>
-                <input type="text" id='username' placeholder='add the username' />
-                <button id='btn-get' onClick={fetchData}>Search</button>
-            </div>
+            <Fade duration={3000}>
+                <div className='inp-btn'>
+                    <input type="text" id='username' placeholder='add the username' />
+                    <button id='btn-get' onClick={fetchData}>Search</button>
+                </div>
+            </Fade>
+
 
             <div id='hide-div'>
-
                 {data ? (
                     <div className="userData">
                         <Card avatarUrl={data.avatar_url}
                             name={data.name}
                             followers={data.followers}
-                            following={data.following}                            
-                            bio={data.bio} publicRepos={data.public_repos} 
-                            htmlUrl={data.html_url}/>
-
+                            following={data.following}
+                            bio={data.bio} publicRepos={data.public_repos}
+                            htmlUrl={data.html_url} />
                         <span>Click on the card for more information.</span>
                     </div>
                 ) : (
                     ""
                 )}
             </div>
+
+
+
         </div>
 
     )
