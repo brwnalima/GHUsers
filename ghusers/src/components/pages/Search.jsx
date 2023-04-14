@@ -27,6 +27,7 @@ function Search() {
 
     return (
         <div className='search'>
+            <img id='logo' src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
             <h1>GHUSERS</h1>
             <label htmlFor="username">Who are you looking for today?</label>
 

@@ -18,7 +18,7 @@
   height: 100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease;
-  border: 3px solid #171515;
+  border: 1px solid #171515;
   box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.181);
 }
 
