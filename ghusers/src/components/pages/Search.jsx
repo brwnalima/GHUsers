@@ -26,13 +26,15 @@ function Search() {
     }, []);
 
     return (
-        <div>
-            <label htmlFor="username">Username</label>
-            <br />
-            <input type="text" id='username' placeholder='digite seu nome' />
-            <br />
-            <button id='btn-get' onClick={fetchData}>buscar usuário</button>
-            <br/>
+        <div className='search'>
+            <h1>GHUSERS</h1>
+            <label htmlFor="username">Qual usuário você procura?</label>
+
+            <div className='inp-btn'>
+                <input type="text" id='username' placeholder='digite seu nome' />
+                <button id='btn-get' onClick={fetchData}>buscar usuário</button>
+            </div>
+
             <div id='hide-div'>
 
                 {data ? (
