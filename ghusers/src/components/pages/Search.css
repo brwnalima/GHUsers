@@ -3,7 +3,6 @@
 }
 
 .search {
-    padding-top: 1%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -81,6 +80,10 @@ span:last-child {
 
 @media (max-width: 768px) {
 
+    .search {
+        padding-top: 0;
+    }
+
     input {
         width: 30%;
         font-size: 15px;
@@ -94,5 +97,12 @@ span:last-child {
     span:last-child {
         font-size: 15px;
     }
+
+    #hide-div {
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+    }
+    
 
 }

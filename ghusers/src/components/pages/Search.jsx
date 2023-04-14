@@ -33,7 +33,7 @@ function Search() {
             <h1>GHUSERS</h1>
             <label htmlFor="username">Who are you looking for today?</label>
 
-            <Fade duration={3000}>
+            <Fade duration={5000}>
                 <div className='inp-btn'>
                     <input type="text" id='username' placeholder='add the username' />
                     <button id='btn-get' onClick={fetchData}>Search</button>
