@@ -55,3 +55,14 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+span:last-child {
+    color: #171515;
+}

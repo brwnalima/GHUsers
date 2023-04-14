@@ -19,8 +19,8 @@ function Card(props) {
             <span>Followers</span>
           </div>
           <div className="stat">
-            <span>{props.stars}</span>
-            <span>Stars</span>
+            <span>{props.following}</span>
+            <span>Following</span>
           </div>
         </div>
       </div>

@@ -28,11 +28,11 @@ function Search() {
     return (
         <div className='search'>
             <h1>GHUSERS</h1>
-            <label htmlFor="username">Qual usuário você procura?</label>
+            <label htmlFor="username">Who are you looking for today?</label>
 
             <div className='inp-btn'>
                 <input type="text" id='username' placeholder='digite seu nome' />
-                <button id='btn-get' onClick={fetchData}>buscar usuário</button>
+                <button id='btn-get' onClick={fetchData}>Search user</button>
             </div>
 
             <div id='hide-div'>
@@ -42,8 +42,11 @@ function Search() {
                         <Card avatarUrl={data.avatar_url}
                             name={data.name}
                             followers={data.followers}
+                            following={data.following}                            
                             bio={data.bio} publicRepos={data.public_repos} 
                             htmlUrl={data.html_url}/>
+
+                        <span>Click on the card for more information.</span>
                     </div>
                 ) : (
                     ""
