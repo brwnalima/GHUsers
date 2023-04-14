@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import axios from 'axios'
 import Card from '../card/Card';
+import "./Search.css"
 
 function Search() {
     const [data, setData] = useState(null);
@@ -31,8 +32,9 @@ function Search() {
             <input type="text" id='username' placeholder='digite seu nome' />
             <br />
             <button id='btn-get' onClick={fetchData}>buscar usuário</button>
-
+            <br/>
             <div id='hide-div'>
+
                 {data ? (
                     <div className="userData">
                         <Card avatarUrl={data.avatar_url}
@@ -42,7 +44,7 @@ function Search() {
                             htmlUrl={data.html_url}/>
                     </div>
                 ) : (
-                    "teste"
+                    ""
                 )}
             </div>
         </div>
