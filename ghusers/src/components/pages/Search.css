@@ -10,7 +10,8 @@
     justify-content: center;
 }
 
-h1, label {
+h1,
+label {
     text-align: center;
     padding: 10px;
 }
@@ -65,4 +66,22 @@ button:hover {
 
 span:last-child {
     color: #171515;
+}
+
+@media (max-width: 768px) {
+
+    input {
+        width: 30%;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 0.625rem 2rem;
+    }
+
+    span:last-child {
+        font-size: 15px;
+    }
+
 }
