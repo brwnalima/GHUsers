@@ -2,6 +2,10 @@
 
 <p>Projeto front-end desenvolvido em React, que consume a API do GITHUB. A aplicação permite que você encontre qualquer usuário da plataforma, e traz algumas informações sobre o perfil.</p>
 
+<p align="center">
+    <img src="https://github.com/brwnalima/GHUsers/blob/main/ghusers/public/assets/gif.gif?raw=true" alt="Descrição do GIF">
+</p>
+
 <hr>
 
 ### Clone este repositório:
